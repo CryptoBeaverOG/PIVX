@@ -57,11 +57,13 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     
     // WagerrDevs - RELEASE CHANGE - Checkpoins, timestamp of last checkpoint, total nr. of transactions
 
-    (0, uint256("000007b9191bc7a17bfb6cedf96a8dacebb5730b498361bf26d44a9f9dcc1079"));         // Genesis block
+    (0, uint256("000007b9191bc7a17bfb6cedf96a8dacebb5730b498361bf26d44a9f9dcc1079"))         // Genesis block
+    (1001, uint256("0000002a314058a8f61293e18ddbef5664a2097ac0178005f593444549dd5b8c"))      // Last PoW Block
+    (1002, uint256("e7b02e0ce1fac46a53cf5fe514505fed7509b54986564be992cc6403bddd72c3"));     // First PoS Block
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1518696181, // * UNIX timestamp of last checkpoint block
-    0,    // * total number of transactions between genesis and last checkpoint
+    1055,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
